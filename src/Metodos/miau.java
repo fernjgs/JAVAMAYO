@@ -2,15 +2,13 @@ package Metodos;
 
 public class miau {
 
-	public void saludar(boolean miau){
-		System.out.println("Buenas tardes");
+	public static void verificarValor(boolean valor) {
+		String mensaje = valor ? "Si, eso es cierto" : "No, eso es falso";
+		System.out.println(mensaje);
 	}
-
-	public static void main(String[] args) {
-		miau i = new miau();
-		i.saludar(true);
-		
-		
-	}
+	
+	public static void main (String [] args) {
+		verificarValor(false);
+		}
 	
 }
